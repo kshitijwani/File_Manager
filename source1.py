@@ -31,20 +31,20 @@ def loggin():
     login.title('File Manager & Recovery System')
     login.geometry('500x500')
     # login window1
-    login_frame = LabelFrame(login, text="login", padx=10, pady=100)
-    login_frame.pack(padx=50, pady=50)
+    login_frame = LabelFrame(login, text="login", padx=20, pady=100)
+    login_frame.pack(padx=25, pady=25)
 
-    login_label = Label(login_frame, text="Login ID")
+    login_label = Label(login_frame, text="Login ID" ,bg="violet" , fg="purple" , font="aerial 10 bold" )
     login_label.grid(row=0, column=0)
     login_text_field = Entry(login_frame, width=40)
     login_text_field.grid(row=0, column=1)
 
-    pass_label = Label(login_frame, text="Password")
+    pass_label = Label(login_frame, text="Password" ,bg="violet" , fg="purple" , font="aerial 10 bold")
     pass_label.grid(row=1, column=0)
     pass_text_field = Entry(login_frame, width=40)
     pass_text_field.grid(row=1, column=1, pady=5)
 
-    Checkbutton(login_frame, text="Remember ME").grid(row=2,columnspan=2)
+    Checkbutton(login_frame, text="Remember ME" , fg="purple" ).grid(row=2,columnspan=2)
 
     def logging():
         # making login_status
@@ -53,7 +53,7 @@ def loggin():
             login_status = True
             login.destroy()
 
-    Button(login_frame, text="Enter", command=logging).grid(row=3, columnspan=2)
+    Button(login_frame, text="Enter", bg="purple" , fg="white" command=logging).grid(row=3, columnspan=2)
 
 
 def window31():
